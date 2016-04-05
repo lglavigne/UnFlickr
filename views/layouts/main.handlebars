@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>UnFlickr: Not Quite Flickr</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        <!-- Custom Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    </head>
+
+    <style>
+        .panel .panel-heading  {
+            background-color: #FFC904;
+            border-color: #FFC904;
+            color: #000;
+            
+        }
+        .panel-primary {
+            border-color: #FFC904;
+        }
+        .panel-default {
+            border-color: #FFC904;
+        }
+        .btn-primary {
+            background-color: #FFC904;
+            border-color: #FFC904;
+        }
+        .btn-primary:hover {
+            background-color: #FFD950;
+            border-color: #FFD950;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar-default .navbar-brand {
+            background-color: #000;
+            color: #FFC904;
+        }
+        .navbar-default .navbar-nav>li>a {
+            background-color: #000;
+            color: #FFC904;
+        }
+        .navbar-default .navbar-brand:hover {
+            background-color: #000;
+            color: #FFF;
+        }
+        .navbar-default .navbar-nav>li>a:hover {
+            background-color: #000;
+            color: #FFF;
+        }
+        .btn{
+            color: #000;
+        }
+        .navbar-default .navbar-toggle{
+            background-color: #000;
+            color: #000;
+        }
+        .navbar-default .navbar-toggle:hover{
+            background-color: #FFC904;
+            color: #000;
+        }
+        .footer i{
+            color: #FFC904;
+        }
+        .footer i:hover{
+            color: #FFD950;
+            border: none;
+            text-decoration: none;
+        }
+    </style>
+
+    <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">UnFlickr: Not Quite Flickr</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/signup" id="signup">Sign Up</a></li>
+            <li><a href="/signin" id="signin">Sign In</a></li>
+            <li><a href="/signout" id="signout">Sign Out</a></li>
+            <li id="hello"><a href="./">Hello!<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="col-lg-12" id="indexBody">
+            {{{body}}}
+        </div>
+           
+        <div class="col-md-4">
+            {{> stats this }}
+        </div>
+
+        <div class="col-md-4">
+            {{> popular this }}
+        </div>
+
+        <div class="col-md-4">
+            {{> comments this }}
+        </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">UnFlickr by Logan La Vigne</p>
+        <a href="https://www.twitter.com">
+            <i class="fa fa-twitter-square fa-2x text-primary"></i>
+        </a>
+
+        <a href="https://www.facebook.com">
+            <i class="fa fa-facebook-square fa-2x text-primary"></i>
+        </a>
+      </div>
+    </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="/public/js/scripts.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+</html>

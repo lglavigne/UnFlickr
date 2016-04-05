@@ -1,0 +1,32 @@
+
+<div id="signupcontainer">
+	<div id="statstitle">
+		<h3>
+			Sign In
+		</h3>
+	</div>
+	<form method="post" action="/signin" enctype="application/x-www-form-urlencoded">
+		<div class="panel-body form-horizontal">
+		{{#if error}}
+			<div class="alert alert-danger">{{error}}</div>
+		{{/if}}
+			
+			<div class="form-group col-lg-12">
+	            <label>Username</label>
+	            <input name='username' type="text" class="form-control" onFocus="if(this.value == 'E-Mail') this.value = ''" onBlur="if(this.value == '') this.value = 'E-Mail'" value="E-Mail" pattern=".{0,50}" required="required">
+            </div>
+                
+            <div class="form-group col-lg-12">
+	            <label>Password</label>
+	            <input name='password' type="password" class="form-control" onFocus="if(this.value == 'Password') this.value = ''" onBlur="if(this.value == '') this.value = 'Password'" value="Password" pattern=".{0,14}" required="required">
+	            </div>
+            <br />
+
+				<div class="form-group col-md-12">
+					<div class="col-md-12 text-right">
+						<button type="submit" id="login-btn" class="btn btn-primary" type="button"><i class="fa fa-cloud-upload "></i> Sign In</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>

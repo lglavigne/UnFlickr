@@ -1,0 +1,25 @@
+#indexBody{
+	padding: 15px 30px;
+}
+body{
+	width: 60%;
+	margin: 0 auto;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	background-color: black;
+}
+h1, a{
+	color: #ff7019;
+}
+.panel{
+	margin: 15px 10px;
+}
+.panel-heading{
+	background-color: #00b1b2;
+}
+
+button{
+	margin: 10px;
+	padding: 10px;
+}
+
